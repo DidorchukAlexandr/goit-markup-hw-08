@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
+         ">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="" class="logo link">Web<span class="logo__studio link">Studio</span></a>
+            <nav class="nav">
+                <ul class="nav__list list">
+                    <li class="nav__item"><a class="nav__link link" href="./index.html">Студия</a></li>
+                    <li class="nav__item"><a class="nav__link-portfolio link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <a class="contact__email-link link" href="mailto:info@devstudio.com"><svg class="contact__email-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="contact__item">
+                        <a class="contact__tel-link link" href="tel:+380961111111"><svg class="contact__tel-icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="menu-open-btn">
+                <svg class="menu-open-btn__icon-svg" width="40" height="40">
+                    <use href="./images/icons.svg#icon-mob-menu"></use>
+                </svg></button>
+        </div>
+        <div class="mob-menu is-hidden">
+            <button type="button" class="menu-close-btn">
+                <svg class="menu-close-btn__icon-svg" width="40" height="40">
+                    <use href="./images/icons.svg#icon-mob-menu-close"></use>
+                </svg></button>
+            <ul class="mob-menu__list list">
+                <li class="mob-menu__item"><a class="mob-menu__link link" href="./index.html">Студия</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link link" href="">Контакты</a></li>
+            </ul>
+            <ul class="mob-menu__contact-list list">
+                <li class="mob-menu__contact-item">
+                    <a class="mob-menu__contact-tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu__contact-item">
+                    <a class="mob-menu__contact-email-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mob-menu__soc-list list">
+                <li class="mob-menu__soc-item"><a href="" class="mob-menu__soc-link link">
+                        Instagram
+                    </a>
+                </li>
+                <li class="mob-menu__soc-item"><a href="" class="mob-menu__soc-link link">
+                        Twitter
+                    </a>
+                </li>
+                <li class="mob-menu__soc-item"><a href="" class="mob-menu__soc-link link">
+                        Facebook
+                    </a>
+                </li>
+                <li class="mob-menu__soc-item"><a href="" class="mob-menu__soc-link link">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="portfolio">
+            <div class="container">
+                <h2 class="visually-hidden">Фильтр</h2>
+                <ul class="filter-list list">
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn-all pointer">Все</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn-web pointer">Веб-сайты</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn-applic pointer">Приложения</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn-design pointer">Дизайн</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__btn-marketing pointer">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="projects-list list">
+                    <li class="projects-list__item">
+                        <a href="" class="projects-list__link link">
+                            <div class="projects-list__top-wrap">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-img-1-1x.jpg  1x
+                                        ./images/project-img-1-2x.jpg  2x"
+                                         media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/project-img-tab-1-1x.jpg  1x
+                                        ./images/project-img-tab-1-2x.jpg  2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/project-img-mob-1-1x.jpg  1x
+                                        ./images/project-img-mob-1-2x.jpg  2x"
+                                         media="(min-width: 480px)">
+                                    <img src="./images/project-img-mob-1-1x.jpg" 
+                                         alt="Технокряк" width="370" height="294">
+                                </picture>
+                                <p class="projects-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="projects-list__title-subtitle">
+                                <h3 class="projects-list__title">Технокряк</h3>
+                                <p class="projects-list__subtitle">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-list__item">
+                        <a href="" class="projects-list__link link">
+                            <div class="projects-list__top-wrap">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-img-2-1x.jpg  1x
+                                        ./images/project-img-2-2x.jpg  2x" 
+                                        media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/project-img-tab-2-1x.jpg  1x
+                                        ./images/project-img-tab-2-2x.jpg  2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/project-img-mob-2-1x.jpg  1x
+                                        ./images/project-img-mob-2-2x.jpg  2x"
+                                         media="(min-width: 480px)">
+                                    <img src="./images/project-img-mob-2-1x.jpg"
+                                         alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                </picture>
+                                <p class="projects-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="projects-list__title-subtitle">
+                                <h3 class="projects-list__title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                                <p class="projects-list__subtitle">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-list__item">
+                        <a href="" class="projects-list__link link">
+                            <div class="projects-list__top-wrap">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-img-3-1x.jpg  1x
+                                        ./images/project-img-3-2x.jpg  2x"
+                                         media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/project-img-tab-3-1x.jpg  1x
+                                        ./images/project-img-tab-3-2x.jpg  2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/project-img-mob-3-1x.jpg  1x
+                                        ./images/project-img-mob-3-2x.jpg  2x"
+                                         media="(min-width: 480px)">
+                                    <img src="./images/project-img-mob-3-1x.jpg"
+                                     alt="Ресторан Seafood" width="370" height="294">
+                                </picture>
+                                <p class="projects-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="projects-list__title-subtitle">
+                                <h3 class="projects-list__title">Ресторан <span lang="en">Seafood</span></h3>
+                                <p class="projects-list__subtitle">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-list__item">
+                        <a href="" class="projects-list__link link">
+                            <div class="projects-list__top-wrap">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-img-4-1x.jpg  1x
+                                        ./images/project-img-4-2x.jpg  2x"
+                                         media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/project-img-tab-4-1x.jpg  1x
+                                        ./images/project-img-tab-4-2x.jpg  2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/project-img-mob-4-1x.jpg  1x
+                                        ./images/project-img-mob-4-2x.jpg  2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/project-img-mob-4-1x.jpg"
+                                        alt="Проект Prime" width="370" height="294">
+                                </picture>
+                                <p class="projects-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="projects-list__title-subtitle">
+                                <h3 class="projects-list__title">Проект <span lang="en">Prime</span></h3>
+                                <p class="projects-list__subtitle">Маркетинг</p>
+                            </div>
+                        </a>
+                     </li>
+                    <li class="projects-list__item">
+                        <a href="" class="projects-list__link link">
+                            <div class="projects-list__top-wrap">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-img-5-1x.jpg  1x
+                                        ./images/project-img-5-2x.jpg  2x"
+                                         media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/project-img-tab-5-1x.jpg  1x
+                                        ./images/project-img-tab-5-2x.jpg  2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/project-img-mob-5-1x.jpg  1x
+                                        ./images/project-img-mob-5-2x.jpg  2x"
+                                         media="(min-width: 480px)">
+                                    <img src="./images/project-img-mob-5-1x.jpg" 
+                                         alt="Проект Boxes" width="370" height="294">
+                                </picture>
+                                <p class="projects-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="projects-list__title-subtitle">
+                                <h3 class="projects-list__title">Проект <span lang="en">Boxes</span></h3>
+                                <p class="projects-list__subtitle">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-list__item">
+                        <a href="" class="projects-list__link link">
+                            <div class="projects-list__top-wrap">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-img-6-1x.jpg  1x
+                                        ./images/project-img-6-2x.jpg  2x"
+                                         media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/project-img-tab-6-1x.jpg  1x
+                                        ./images/project-img-tab-6-2x.jpg  2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/project-img-mob-6-1x.jpg  1x
+                                        ./images/project-img-mob-6-2x.jpg  2x"
+                                         media="(min-width: 480px)">
+                                    <img src="./images/project-img-mob-6-1x.jpg" 
+                                        alt="Inspiration has no Borders" width="370" height="294">
+                                </picture>
+                                <p class="projects-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="projects-list__title-subtitle">
+                                <h3 lang="en" class="projects-list__title">Inspiration has no Borders</h3>
+                                <p class="projects-list__subtitle">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-list__item">
+                        <a href="" class="projects-list__link link">
+                            <div class="projects-list__top-wrap">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-img-7-1x.jpg  1x
+                                        ./images/project-img-7-2x.jpg  2x"
+                                         media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/project-img-tab-7-1x.jpg  1x
+                                        ./images/project-img-tab-7-2x.jpg  2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/project-img-mob-7-1x.jpg  1x
+                                        ./images/project-img-mob-7-2x.jpg  2x"
+                                         media="(min-width: 480px)">
+                                    <img src="./images/project-img-mob-7-1x.jpg"
+                                         alt="Издание Limited Edition" width="370" height="294">
+                                </picture>
+                                <p class="projects-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="projects-list__title-subtitle">
+                                <h3 class="projects-list__title">Издание <span lang="en">Limited Edition</span></h3>
+                                <p class="projects-list__subtitle">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-list__item">
+                        <a href="" class="projects-list__link link">
+                            <div class="projects-list__top-wrap">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-img-8-1x.jpg  1x
+                                        ./images/project-img-8-2x.jpg  2x"
+                                         media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/project-img-tab-8-1x.jpg  1x
+                                        ./images/project-img-tab-8-2x.jpg  2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/project-img-mob-8-1x.jpg  1x
+                                        ./images/project-img-mob-8-2x.jpg  2x"
+                                         media="(min-width: 480px)">
+                                    <img src="./images/project-img-mob-8-1x.jpg"
+                                         alt="Проект LAB" width="370" height="294">
+                                </picture>
+                                <img src="./images/project-img-8.jpg" alt="Проект LAB" width="370" height="294">
+                                <p class="projects-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="projects-list__title-subtitle">
+                                <h3 class="projects-list__title">Проект <span lang="en">LAB</span></h3>
+                                <p class="projects-list__subtitle">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-list__item">
+                        <a href="" class="projects-list__link link">
+                            <div class="projects-list__top-wrap">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-img-9-1x.jpg  1x
+                                        ./images/project-img-9-2x.jpg  2x"
+                                         media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/project-img-tab-9-1x.jpg  1x
+                                        ./images/project-img-tab-9-2x.jpg  2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/project-img-mob-9-1x.jpg  1x
+                                        ./images/project-img-mob-9-2x.jpg  2x"
+                                         media="(min-width: 480px)">
+                                    <img src="./images/project-img-mob-9-1x.jpg"
+                                         alt="Growing Business" width="370" height="294">
+                                </picture>
+                                <p class="projects-list__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="projects-list__title-subtitle">
+                                <h3 lang="en" class="projects-list__title">Growing Business</h3>
+                                <p class="projects-list__subtitle">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-container__contacts">
+                    <a href="" class="footer-container__logo link">Web<span
+                            class="footer-container__logo-footer link">Studio</span></a>
+                    <address class="address">
+                        <ul class="address__list list">
+                            <li class="address__item-addres"><a class="address__address link" href="">г. Киев, пр-т Леси
+                                    Украинки, 26</a></li>
+                            <li class="address__item-email"><a class="address__email link"
+                                    href="mailto:info@example.com">info@example.com</a></li>
+                            <li class="address__item-tel"><a class="address__tel link" href="tel:+380991111111">+38 099 111
+                                    11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-container-icon">
+                    <strong class="footer-title">присоединяйтесь</strong>
+                    <ul class="footer-list-icon list">
+                        <li class="footer-list-icon__item">
+                            <a href="" class="footer-list-icon__link">
+                                <svg class="footer-list-icon__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-list-icon__item">
+                            <a href="" class="footer-list-icon__link">
+                                <svg class="footer-list-icon__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-list-icon__item">
+                            <a href="" class="footer-list-icon__link">
+                                <svg class="footer-list-icon__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-list-icon__item">
+                            <a href="" class="footer-list-icon__link">
+                                <svg class="footer-list-icon__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <strong class="subscribe-title">Подпишитесь на рассылку</strong>
+                    <form class="subscribe-form">
+                        <label class="subscribe-form__label">
+                            <input type="email" name="email" placeholder="E-mail" class="subscribe-form__email">
+                        </label>
+                        <button class="subscribe-form__button" type="submit">Подписаться
+                            <svg class="subscribe-form__icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
