@@ -1728,12 +1728,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .projects-list__top-text {
-    padding: 34px 24px 92px;
+    padding: 49px 24px 77px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .projects-list__top-text {
-    padding: 36px 24px 90px;
+    padding: 63px 24px;
   }
 }
 
@@ -1819,6 +1819,7 @@ img {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
+  overflow: auto;
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 @media screen and (min-width: 767px) {
