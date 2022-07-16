@@ -40,7 +40,7 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    //overflow: auto;
+    overflow: auto;
     transition: opacity 250ms linear, visibility 250ms linear;
     @media screen and (min-width: 767px) {
             display: none;
