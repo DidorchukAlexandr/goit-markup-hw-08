@@ -155,9 +155,6 @@
 }
 
 .contact__list {
-
-    //  @media screen and (min-width: 768px) {
-    // }
     @media screen and (min-width: 1200px) {
         display: block;
         display: flex;
@@ -176,6 +173,7 @@
     }
         @media screen and (min-width: 1200px) {
         margin-bottom: 0;
+        margin-right: 30px;
         }
 }
 
@@ -212,9 +210,7 @@
         display: flex;
         align-items: center;
         padding-top: 21px;
-        //margin-bottom: 10px;
         transition: color 250ms cubic-bezier(.4, 0, .2, 1);
-
         &:hover,
         &:focus {
             color: var(--accent-color);
@@ -420,12 +416,12 @@
     //height: 294px;
     @media screen and (min-width: 768px) {
         max-width: 354px;
-        height: 294px;
+        //height: 294px;
         overflow: hidden;
     }
      @media screen and (min-width: 1200px) {
         max-width: 370px;
-        height: 294px;
+        //height: 294px;
     }
 
 }
@@ -441,6 +437,12 @@
     padding: 77px 24px;
     transform: translateY(101%);
     transition: transform 250ms linear;
+    @media screen and (min-width: 768px) {
+        padding: 34px 24px 92px;
+    @media screen and (min-width: 1200px) {
+        padding: 36px 24px 90px;
+        }
+    }
 }
 
 .projects-list__item {
