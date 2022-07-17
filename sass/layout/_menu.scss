@@ -39,7 +39,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 48px 40px;
+    padding: 48px 25px 30px;
     overflow: auto;
     transition: opacity 250ms linear, visibility 250ms linear;
     @media screen and (min-width: 767px) {
@@ -87,7 +87,7 @@
 }
 
 .mob-menu__list {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -173,8 +173,16 @@
 }
 
 .mob-menu__soc-item:not(:last-child) {
-   margin-right: 20px;
+  margin-right: 10px;
 }
+
+.mob-menu__soc-item:not(:last-child)::after {
+    content: "";
+    border-left: 1px solid var(--text-color);
+    margin-left: 10px;
+    color: var(--text-color);
+}
+    
 
 .mob-menu__soc-link {
     font-weight: 500;
