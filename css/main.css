@@ -609,6 +609,110 @@ img {
   }
 }
 
+@-moz-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-o-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  padding: 15px;
+  background-color: #ffb8ca;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 300px;
+  z-index: 1;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #ffb8ca;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    right: 0px;
+    padding: 15px;
+    background-color: #ffb8ca;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 300px;
+    z-index: 1;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #ffb8ca;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.menu-open-btn:hover,
+.menu-open-btn:focus {
+  background-color: #e17992;
+}
+
+.menu-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 20px;
+  right: 20px;
+  border: 0;
+  padding: 15px;
+  background-color: #e17992;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 300px;
+  z-index: 1;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #ffb8ca;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .hero {
   background: var(--background-color);
   padding-top: 118px;
@@ -1164,6 +1268,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   display: block;
+  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -1259,6 +1364,7 @@ img {
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  outline: transparent;
   border-radius: 4px;
   padding: 15px 16px;
   margin-bottom: 20px;
